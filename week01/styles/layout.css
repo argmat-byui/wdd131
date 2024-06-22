@@ -1,0 +1,67 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template: 1fr 3fr 1fr / 2fr 1fr;
+    margin: 0; /* Ensure no default margin */
+}
+
+header {
+    background: lightpink;
+    position: relative; /* Establish positioning context */
+    grid-column: 1 / 3;
+}
+
+main {
+    background: coral;
+}
+
+.right-sidebar {
+    background: yellow;
+}
+
+footer {
+    background: wheat;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 3;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+}
+
+.right-sidebar {
+    padding: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.modern a {
+    flex: 1 1 100%;
+}
+
+.navigation {
+    display: flex;
+    background-color: #333;
+    align-items: center;
+    position: absolute; /* Position relative to header */
+    bottom: 0; /* Align at the bottom of the header */
+    width: 100%; /* Occupy full width of the header */
+}
+
+.navigation a {
+    display: block;
+    color: #eee;
+    padding: 0.75rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigation a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
