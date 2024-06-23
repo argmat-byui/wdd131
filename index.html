@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the home page from Matías Argañaraz for the course WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Matías Argañaraz">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <title>WDD 131 - Dynamic Web Fundamentals - Matías Argañaraz</title>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h1 class="title">WDD 131 - Dynamic Web Fundamentals - Matías Argañaraz</h1>
+        </div>
+        <nav class="navigation modern">
+            <a href="https://www.linkedin.com/in/matias-arganaraz/" title="LinkedIn">LinkedIn</a>
+            <a href="https://byui.instructure.com/" title="I-Learn">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" title="Scripture">Scripture</a> <!-- This is actually my favorite scripture. I'm not just copying the example -->
+            <a href="https://argmat-byui.github.io/wdd131/final-project" title="Final Project">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <div class="header">
+                <h2>About Me</h2>
+            </div>
+            <div class="content main-container">
+                <div class="top-container clearfix">
+                    <img src="images/profile.jpg" alt="" width="200">
+                    <p>My name is Matías Argañaraz and I am from Córdoba, Argentina. I work as a Software Engineer and I love my job. I enjoy spending time with my family and solving puzzles. I also like to play padel and soccer with friends.</p>
+                </div>
+                <div class="bottom-container clearfix">
+                    <h2>Córdoba, Argentina</h2>
+                    <figure class="center">
+                        <img src="images/flag.png" alt="" width="200">
+                        <figcaption>Official flag of Argentina</figcaption>
+                    </figure>
+                    <p>Argentina is a vast country located in the southern part of South America. The eighth largest country in the world, it is the second largest country in South America after Brazil, and it's about one-third the size of the United States. The country is divided into four regions: The Andes, the North, the Pampas, and Patagonia. The Pampas is the agricultural heartland.</p>
+                </div>
+            </div>
+        </section>
+        <section class="card right-sidebar">
+            <div class="header">
+                <h2>Web Dev Resources</h2>
+            </div>
+            <div class="content">
+                <ul>
+                    <li><a href="https://web.dev" target="_blank">Web.dev</a></li>
+                    <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
+                    <li><a href="https://developer.mozilla.org" target="_blank">MDN (Mozilla Developer Network)</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Matías Argañaraz | Argentina</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
