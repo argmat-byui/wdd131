@@ -1,0 +1,146 @@
+:root {
+    --primary-color: #346edb;
+    --secondary-color: #3482db;
+    --accent1-color: #e3e5da;
+    --accent2-color: #F39C12;
+
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Montserrat', sans-serif;
+
+    --nav-background-color: #2C3E50;
+    --nav-link-color: #3498DB;
+    --nav-hover-link-color: #E74C3C;
+    --nav-hover-background-color: #F39C12;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+    font-family: var(--paragraph-font);
+    color: var(--accent1-color);
+    font-weight: 400;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    min-height: 75px;
+    align-content: center;
+
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+h1 {
+	text-align: center;
+	font-family: times, serif;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+    align-content: center;
+}
+
+header, footer, .hero {
+    background: var(--secondary-color);
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+}
+
+main {
+    color: #000;
+    flex: 1;
+}
+
+.hover:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.content {
+    padding: 20px;
+    background-color: #fffa;
+}
+
+.data {
+    border-bottom: 1px solid black;
+}
+
+.content h1 {
+    margin-bottom: 15px;
+}
+
+.weather img {
+    display: block;
+    margin: 0 auto;
+}
+
+span.key {
+    font-weight: bold;
+}
+
+span.key::after {
+    content: ": ";
+}
+
+span.data-line {
+    display: block;
+    text-align: center;
+}
+
+@media (min-width: 45em) {
+
+    main {
+        position: relative;
+    }
+
+    .content {
+        position: absolute;
+        width: 18em;
+    }
+
+    span.data {
+        text-align: left;
+    }
+
+	.data {
+        top: 1em;
+		left: 1em;
+	}
+
+	.weather {
+        right: 1em;
+        bottom: 1em;
+	}
+
+    .weather img {
+        display: none;
+    }
+
+    .weather h1::after {
+        content: " ⛅";
+    }
+
+    .content h1 {
+        margin-left: -30px;
+        background-color: var(--secondary-color);
+        color: white;
+    }
+
+    .content {
+        text-align: center;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the temple album page from Matías Argañaraz for the course WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Matías Argañaraz">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <title>Argentina</title>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Argentina</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 45em )" srcset="images/argentina-large.webp">
+                <img src="images/argentina-small.webp" alt="Argentina image">
+            </picture>
+        </div>
+        <div class="content data">
+            <h1>Data</h1>
+            <span class="data-line"><span class="key">Area</span>2,780,400 sq km</span>
+            <span class="data-line"><span class="key">Population</span>asd</span>
+            <span class="data-line"><span class="key">Capital</span>Buenos Aires</span>
+            <span class="data-line"><span class="key">Languages</span>Spanish</span>
+            <span class="data-line"><span class="key">Currency</span>Peso Argentino</span>
+            <span class="data-line"><span class="key">Time Zone</span>UTC-3</span>
+            <span class="data-line"><span class="key">Calling Code</span>+54</span>
+            <span class="data-line"><span class="key">Internet TLD</span>.ar</span>
+        </div>
+        <div class="content weather">
+            <h1>Weather</h1>
+            <img src="images/weather-icon.svg" alt="Weather icon" width="50" height="50">
+            <span class="data-line"><span class="key">Temperature</span>5 °C</span>
+            <span class="data-line"><span class="key">Conditions</span>Cloudy</span>
+            <span class="data-line"><span class="key">Wind</span>15 km/h</span>
+            <span class="data-line"><span class="key">Wind Chill</span><span id="wind-chill"></span></span>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Matías Argañaraz | Argentina</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
