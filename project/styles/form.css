@@ -1,0 +1,56 @@
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+input, textarea, button {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--secondary-color);;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    display: flex;
+    /* align-items: center; */
+    font-weight: initial;
+}
+
+.form-group input[type="radio"] {
+    margin-right: 5px; /* Adjust spacing between radio button and label */
+}
+
+input[type=text]:valid {
+    background-color: rgba(144, 238, 144, 0.2);
+    color: darkgreen;
+  }
+  
+  input[type=text]:invalid {
+    background-color: rgba(255, 192, 203, 0.2);
+    color: indianred;
+  }

@@ -1,0 +1,217 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+:root {
+    --primary-color: #346edb;
+    --secondary-color: #394f77;
+    --accent1-color: #e3e5da;
+    --accent2-color: #F39C12;
+
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Montserrat', sans-serif;
+
+    --nav-background-color: #2C3E50;
+    --nav-link-color: #3498DB;
+    --nav-hover-link-color: #E74C3C;
+    --nav-hover-background-color: #F39C12;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin:0 auto;
+    font-family: var(--paragraph-font);
+    color: var(--accent1-color);
+    min-height: 100vh;
+    min-width: 500px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #333;
+    color: #fff;
+    min-height: 75px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header h1 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+h1 {
+	font-family: times, serif;
+    font-size: 2.5rem;
+    align-content: center;
+    text-align: center;
+}
+
+h2 {
+	font-size: 1.2rem;
+	color: navy;
+	text-align: left;
+	margin: 1rem;
+}
+
+nav {
+	max-width: 700px;
+	margin: 1rem auto;
+}
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 1rem;
+	/* right: 1rem; */
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "x";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: var(--nav-hover-background-color);
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.navigation a.active { 
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+header, footer {
+    background: var(--secondary-color);
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+}
+
+main {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000;
+    padding: 10px;
+    flex: 1;
+}
+
+.main-container {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 50px;
+    place-items: center;
+}
+
+.hover:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+th:last-child, td:last-child {
+    text-align: center;
+}
+
+a.remove {
+    color:rgb(176, 0, 0);
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+#attendance th:nth-child(n + 4):nth-child(-n + 9),
+#attendance td:nth-child(n + 4):nth-child(-n + 9) {
+    display: none;
+}
+
+.attendance-checkbox {
+    width: 30px;  /* Change this value to increase/decrease size */
+    height: 30px; /* Change this value to increase/decrease size */
+    -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+    background-color: #fff; /* Background color */
+    border: 2px solid #ddd; /* Border color and size */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Cursor change on hover */
+}
+
+.attendance-checkbox:checked {
+    background-color: var(--secondary-color); /* Background color when checked */
+    border-color: #007bff; /* Border color when checked */
+}
+
+.attendance-checkbox:checked::after {
+    content: "✓"; /* Checkmark character */
+    display: block;
+    color: #fff; /* Checkmark color */
+    font-size: 24px; /* Adjust size of checkmark */
+    text-align: center; /* Center checkmark */
+}
+
